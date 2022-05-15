@@ -1,17 +1,18 @@
 <?php
 
 /**
- * Salvar como Alunos.php
- * herda da classe crudAlunos
+ * Salvar como Professor.php
+ * herda da classe crudProfessor
  * contem metodos basicos para criar, deletar, Lê e apagar dados no BD
  */
-include_once '../DB.php';
 
-require_once 'CrudAlunos.php';
+ include_once '../../DB.php';
 
- class Alunos extends CrudAlunos {
+require_once 'CrudProfessor.php';
+
+ class Professor extends CrudProfessor {
     
-    protected $tabela = 'aluno';  //define a tabela do banco
+    protected $tabela = 'professor';  //define a tabela do banco
 
       
     //busca 1 item
