@@ -10,8 +10,8 @@
 </head>
 <body>
     <h2>Aluno</h2>
-    <a href="controller/Aluno/CadastrarAluno.php">Cadastrar Aluno</a>
+    <a href="controller/Aluno/index.php">Aluno</a>
     <h2>Professor</h2>
-    <a href="controller/Professor/CadastrarProfessor.php">Cadastrar Professor</a>
+    <a href="controller/Professor/index.php"></a>Professor</a>
 </body>
 </html>
