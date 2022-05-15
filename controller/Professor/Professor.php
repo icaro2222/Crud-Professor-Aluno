@@ -6,7 +6,7 @@
  * contem metodos basicos para criar, deletar, Lê e apagar dados no BD
  */
 
- include_once '../../DB.php';
+ include_once '../../db/DB.php';
 
 require_once 'CrudProfessor.php';
 

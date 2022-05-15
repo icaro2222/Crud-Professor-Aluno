@@ -5,15 +5,18 @@ ini_set("display_errors", 1);
 require_once 'Professor.php';
 
 ?>
-
-<!DOCTYPE HTML>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        <title>cadastro de Professor - WEB I</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Professor</title>
 </head>
-
 <body>
+    
    <?php    
       $professor = new Professor;
       if(isset($_POST['cadastrar'])):
@@ -29,6 +32,7 @@ require_once 'Professor.php';
       endif;
     ?>
 
+    <h2>Cadastrar Professor</h2>
     <form method='post' action="">
         <label for='Nome'> Nome:</label>
             <input type="text" name="nome"/>
