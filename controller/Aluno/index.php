@@ -9,9 +9,9 @@
 </head>
 <body>
     <h1>Listar Alunos</h1>
-    <a href="ListarAlunos.php">Listar Alunos</a>
+    <a href="./ListarAlunos.php">Listar Alunos</a>
     <h1>Cadastrar Aluno</h1>
-    <a href="CadastrarAluno.php">Cadastrar Aluno</a>
+    <a href="./CadastrarAluno.php">Cadastrar Aluno</a>
     
 </body>
 </html>
