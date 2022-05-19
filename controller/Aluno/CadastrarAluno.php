@@ -14,6 +14,9 @@ require_once 'Alunos.php';
 </head>
 
 <body>
+        
+    <a href="../Aluno/index.php"><button>Voltar</button></a>
+
    <?php    
       $aluno = new Alunos;
       if(isset($_POST['cadastrar'])):

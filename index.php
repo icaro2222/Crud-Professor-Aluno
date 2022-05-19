@@ -13,5 +13,7 @@
     <a href="controller/Aluno/index.php">Aluno</a>
     <h2>Professor</h2>
     <a href="controller/Professor/index.php">Professor</a>
+    <h2>Fornecedor</h2>
+    <a href="controller/Fornecedor/index.php">Fornecedor</a>
 </body>
 </html>

@@ -1,57 +1,57 @@
-
-
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
-$nome = $_POST['nome'];
-$endereco = $_POST['endereco'];
-$cpf = $_POST['cpf'];
-$idade = $_POST['idade'];
-$telefone = $_POST['telefone'];
-
+require_once 'Alunos.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Alunos</title>
+        <title>Alteração de alunos - WEB I</title>
 </head>
+
 <body>
-    <a href="ListarAlunos.php">Listar Alunos</a>
-    <?php
-    
-    require_once("Db.php");
+   <?php  
+      // Alterar
 
-    $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
-    $endereco = $_POST['endereco'];
-    $idade = $_POST['idade'];
-    $telefone = $_POST['telefone'];
+      $id    = $_POST['id'];
+      $nome  = $_POST['nome'];
+      $endereco = $_POST['endereco'];
+     
+       
 
-    $db = new BD();
-
-    $db->insert($nome, $endereco, $cpf, $idade, $telefone);
+       if ( isset($_POST['alterarDados'])):
+       {
+         echo "entrou no post";
+        $aluno = new Alunos;
+           $aluno->setNome($nome);
+           $aluno->setEndereco($endereco);
+           $aluno->update($id);
+        }
+     endif;
     ?>
-    <h2>Aluno Cadastrado Com Sucesso!!!</h2>
-    <table>
-        <tr>
-            <th>Nome: </th>
-            <th>Endereço: </th>
-            <th>Idade: </th>
-            <th>CPF: </th>
-            <th>Telefone: </th>
-        </tr>
-        <tr>
-            <td><?php  echo $nome?></td>
-            <td><?php  echo $endereco?></td>
-            <td><?php  echo $idade?></td>
-            <td><?php  echo $cpf?></td>
-            <td><?php  echo $telefone?></td>
-        </tr>
-    </table>
+
+
+
+<form method='post' action="">
+    <label for='Nome'> Nome:</label>
+    	<input type="text" name="nome" value="<?php echo $nome;?>"/>;
+    <label for='endereço'> Endereço: </label>    
+    	<input type="text" name="endereco"value="<?php echo $endereco;?>"/>;
+        <input type="hidden" name="id" value="<?php echo $id;?>"/>
+         <input type="submit" name="alterarDados"/>
+      
+         <a href=ListarAluno.php>lista de alunos</a>
+    </form>
+            <!-- Fim da tabela -->
+
+
+
+
+    </form>
+
 </body>
 </html>
