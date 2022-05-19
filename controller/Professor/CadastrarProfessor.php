@@ -31,6 +31,18 @@ require_once 'Professor.php';
             }
       endif;
     ?>
+    <?php    
+       $professor = new Professor;
+       if(isset($_POST['apagar'])):
+             $nome = $_POST['nome'];
+ 
+             $professor->setNome($nome);
+ 
+             if($professor->delete($nome)){
+                 echo "Professor ". $nome. " inserido com sucesso";
+             }
+       endif;
+     ?>
 
     <h2>Cadastrar Professor</h2>
     <form method='post' action="">
@@ -39,6 +51,7 @@ require_once 'Professor.php';
         <label for='endereço'> Endereço: </label>    
             <input type="text" name="endereco"/>
             <input type="submit" name="cadastrar"/>
+            <button ></button>
             
     </form>
 
