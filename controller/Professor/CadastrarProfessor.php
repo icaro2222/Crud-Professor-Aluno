@@ -11,12 +11,15 @@ require_once 'Professor.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-grid.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Professor</title>
 </head>
 <body>
     
+	<header>Topo</header>
+	<main>
    <?php    
       $professor = new Professor;
       if(isset($_POST['cadastrar'])):
@@ -45,6 +48,7 @@ require_once 'Professor.php';
      ?>
 
     <h2>Cadastrar Professor</h2>
+    <a href="./index.php"><button>Voltar</button></a>
     <form method='post' action="">
         <label for='Nome'> Nome:</label>
             <input type="text" name="nome"/>
@@ -53,6 +57,13 @@ require_once 'Professor.php';
             <input type="submit" name="cadastrar"/>
             
     </form>
+
+    </main>
+    
+	<asideL>Lateral ESQ</asideL>
+	<asideR>Lateral Dir</asideR>
+	<footer>Rodape </footer>
+
 
 </body>
 </html>

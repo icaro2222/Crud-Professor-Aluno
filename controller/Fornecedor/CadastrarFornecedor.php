@@ -9,6 +9,7 @@ require_once 'Fornecedor.php';
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-grid.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 <head>
         <title>cadastro de Fornecedor - WEB I</title>
@@ -43,6 +44,13 @@ require_once 'Fornecedor.php';
             <input type="submit" name="cadastrar"/>
             
     </form>
+
+    </main>
+    
+	<asideL>Lateral ESQ</asideL>
+	<asideR>Lateral Dir</asideR>
+	<footer>Rodape </footer>
+
 
 </body>
 </html>

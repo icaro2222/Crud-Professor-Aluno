@@ -10,6 +10,7 @@ $cpf = $_POST['cpf'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style-grid.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Alunos</title>
 </head>
@@ -25,5 +26,13 @@ $cpf = $_POST['cpf'];
     $db->delete($cpf);
     ?>
     <h2>Aluno Deletado Com Sucesso!!!</h2>
+
+    </main>
+    
+	<asideL>Lateral ESQ</asideL>
+	<asideR>Lateral Dir</asideR>
+	<footer>Rodape </footer>
+
+
 </body>
 </html>

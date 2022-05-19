@@ -2,18 +2,26 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once 'Alunos.php';
+require_once 'Professor.php';
 
 ?>
 
 <!DOCTYPE HTML>
 <html lang="pt-BR">
+<link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-grid.css">
+<link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
-        <title>Lista de alunos - WEB I</title>
+        <title>Lista de  s - WEB I</title>
 </head>
 
 <body>
+
+<header>Topo</header>
+	<main>
+    <h1>Lista de Professores</h1>
+    <a href="./index.php"><button>Voltar</button></a>
    
     <!-- Inicio da tabela -->
     <table class="table">
@@ -26,20 +34,20 @@ require_once 'Alunos.php';
                 <tbody>
                     <?php 
                     
-                    $aluno=New Alunos;
+                    $professor=New Professor;
 
                     //exclusao de Usuario
                     if (isset($_POST['excluir'])){
                                             
                         $id = $_POST['id'];
                         
-                        $aluno->delete($id);
+                        $professor->delete($id);
                     }
                                                          
                     
                     
 
-                    foreach ($aluno->findAll() as $key => $value) { ?>
+                    foreach ($professor->findAll() as $key => $value) { ?>
           
                     <tr>
                         <td> <?php echo $value->nome;?> </td>
@@ -49,7 +57,7 @@ require_once 'Alunos.php';
                         <td> <?php echo $value->endereco;?> </td>
                     <td>
 
-                        <form method="post" action="AlterarAluno.php">
+                        <form method="post" action="AlterarProfessor.php">
                                 <input name="id" type="hidden" value="<?php echo $value->id;?>"/>                  
                                 <input name="nome" type="hidden" value="<?php echo $value->nome;?>"/>
                                 <input name="endereco" type="hidden" value="<?php echo $value->endereco;?>"/>
@@ -74,6 +82,13 @@ require_once 'Alunos.php';
 
 
     </form>
+
+    </main>
+    
+	<asideL>Lateral ESQ</asideL>
+	<asideR>Lateral Dir</asideR>
+	<footer>Rodape </footer>
+
 
 </body>
 </html>

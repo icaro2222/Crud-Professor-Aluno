@@ -2,18 +2,24 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once 'Alunos.php';
+require_once 'Professor.php';
 
 ?>
 
 <!DOCTYPE HTML>
 <html lang="pt-BR">
+<link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-grid.css">
+<link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
-        <title>Alteração de alunos - WEB I</title>
+        <title>Alteração de Professor - WEB I</title>
 </head>
 
 <body>
+    
+	<header>Topo</header>
+	<main>
    <?php  
       // Alterar
 
@@ -26,7 +32,7 @@ require_once 'Alunos.php';
        if ( isset($_POST['alterarDados'])):
        {
          echo "entrou no post";
-        $aluno = new Alunos;
+        $aluno = new Professor;
            $aluno->setNome($nome);
            $aluno->setEndereco($endereco);
            $aluno->update($id);
@@ -38,15 +44,22 @@ require_once 'Alunos.php';
 
 <form method='post' action="">
     <label for='Nome'> Nome:</label>
-    	<input type="text" name="nome" value="<?php echo $nome;?>"/>;
+    	<input type="text" name="nome" value="<?php echo $nome;?>"/>
     <label for='endereço'> Endereço: </label>    
-    	<input type="text" name="endereco"value="<?php echo $endereco;?>"/>;
+    	<input type="text" name="endereco"value="<?php echo $endereco;?>"/>
         <input type="hidden" name="id" value="<?php echo $id;?>"/>
          <input type="submit" name="alterarDados"/>
-      
-         <a href=ListarAluno.php>lista de alunos</a>
     </form>
             <!-- Fim da tabela -->
+
+      <a href="./index.php"><button>Voltar</button></a>
+
+      </main>
+    
+	<asideL>Lateral ESQ</asideL>
+	<asideR>Lateral Dir</asideR>
+	<footer>Rodape </footer>
+
 
 </body>
 </html>

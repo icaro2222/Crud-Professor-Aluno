@@ -9,6 +9,7 @@ require_once 'Fornecedor.php';
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-grid.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
@@ -29,7 +30,7 @@ require_once 'Fornecedor.php';
        if ( isset($_POST['alterarDados'])):
        {
          echo "entrou no post";
-        $fornecedor = new Fornecedors;
+        $fornecedor = new Fornecedor;
            $fornecedor->setNome($nome);
            $fornecedor->setEndereco($endereco);
            $fornecedor->update($id);
@@ -50,6 +51,13 @@ require_once 'Fornecedor.php';
             <!-- Fim da tabela -->
 
       <a href=ListarFornecedor.php><button>Voltar</button></a>
+
+      </main>
+    
+	<asideL>Lateral ESQ</asideL>
+	<asideR>Lateral Dir</asideR>
+	<footer>Rodape </footer>
+
 
 </body>
 </html>

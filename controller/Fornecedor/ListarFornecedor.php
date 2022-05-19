@@ -9,6 +9,7 @@ require_once 'Fornecedor.php';
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../css/style-grid.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
@@ -20,7 +21,7 @@ require_once 'Fornecedor.php';
     <h1>Listar Fornecedor</h1>
     
     
-    <a href="../Aluno/index.php"><button>Voltar</button></a>
+    <a href="../Fornecedor/index.php"><button>Voltar</button></a>
 
     <!-- Inicio da tabela -->
     <table class="table">
@@ -33,30 +34,27 @@ require_once 'Fornecedor.php';
                 <tbody>
                     <?php 
                     
-                    $aluno=New fornecedor;
+                    $fornecedor = New fornecedor;
 
                     //exclusao de Usuario
                     if (isset($_POST['excluir'])){
                                             
                         $id = $_POST['id'];
                         
-                        $aluno->delete($id);
+                        $fornecedor->delete($id);
                     }
                                                          
                     
                     
 
-                    foreach ($aluno->findAll() as $key => $value) { ?>
+                    foreach ($fornecedor->findAll() as $key => $value) { ?>
           
                     <tr>
                         <td> <?php echo $value->nome;?> </td>
-
-                        <td> <?php echo $value->id;?> </td>
-
                         <td> <?php echo $value->endereco;?> </td>
                     <td>
 
-                        <form method="post" action="AlterarAluno.php">
+                        <form method="post" action="AlterarFornecedor.php">
                                 <input name="id" type="hidden" value="<?php echo $value->id;?>"/>                  
                                 <input name="nome" type="hidden" value="<?php echo $value->nome;?>"/>
                                 <input name="endereco" type="hidden" value="<?php echo $value->endereco;?>"/>
@@ -81,6 +79,13 @@ require_once 'Fornecedor.php';
 
 
     </form>
+
+    </main>
+    
+	<asideL>Lateral ESQ</asideL>
+	<asideR>Lateral Dir</asideR>
+	<footer>Rodape </footer>
+
 
 </body>
 </html>
