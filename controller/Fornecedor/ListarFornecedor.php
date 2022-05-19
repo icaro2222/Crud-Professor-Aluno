@@ -9,7 +9,7 @@ require_once 'Fornecedor.php';
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../css/style-grid.css">
+	<link rel="stylesheet" href="../../css/style-grid.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
@@ -17,7 +17,9 @@ require_once 'Fornecedor.php';
 </head>
 
 <body>
-   
+  
+	<header>Topo</header>
+	<main>
     <h1>Listar Fornecedor</h1>
     
     

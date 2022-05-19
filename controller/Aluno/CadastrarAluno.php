@@ -9,7 +9,7 @@ require_once 'Alunos.php';
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../css/style-grid.css">
+	<link rel="stylesheet" href="../../css/style-grid.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 <head>
         <title>cadastro de alunos - WEB I</title>
@@ -17,7 +17,9 @@ require_once 'Alunos.php';
 </head>
 
 <body>
+    
 	<header>Topo</header>
+	<main>
     <h1>Cadastrar Aluno</h1>
         
     <a href="../Aluno/index.php"><button>Voltar</button></a>

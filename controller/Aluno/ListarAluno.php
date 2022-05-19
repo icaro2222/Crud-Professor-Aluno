@@ -9,7 +9,7 @@ require_once 'Alunos.php';
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../css/style-grid.css">
+	<link rel="stylesheet" href="../../css/style-grid.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
@@ -18,6 +18,8 @@ require_once 'Alunos.php';
 
 <body>
    
+	<header>Topo</header>
+	<main>
     <h1>Listar Alunos</h1>
     
     

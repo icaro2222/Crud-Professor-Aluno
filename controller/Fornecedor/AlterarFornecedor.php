@@ -17,6 +17,9 @@ require_once 'Fornecedor.php';
 </head>
 
 <body>
+    
+	<header>Topo</header>
+	<main>
     <h1>Alterar fornecedor</h1>
    <?php  
       // Alterar

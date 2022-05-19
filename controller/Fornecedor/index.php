@@ -9,7 +9,9 @@
     <title>Fornecedor</title>
 </head>
 <body>
-        
+    
+	<header>Topo</header>
+	<main>
     <a href="../../index.php"><button>Voltar</button></a>
 
     <h1>Listar Fornecedores</h1>

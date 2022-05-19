@@ -17,6 +17,9 @@ require_once 'Fornecedor.php';
 </head>
 
 <body>
+    
+	<header>Topo</header>
+	<main>
     <h1>Cadastrar fornecedor</h1>
         
     <a href="../Fornecedor/index.php"><button>Voltar</button></a>
