@@ -45,9 +45,9 @@ require_once 'Fornecedor.php';
 
 <form method='post' action="">
     <label for='Nome'> Nome:</label>
-    	<input type="text" name="nome" value="<?php echo $nome;?>"/>;
+    	<input type="text" name="nome" value="<?php echo $nome;?>"/>
     <label for='endereço'> Endereço: </label>    
-    	<input type="text" name="endereco"value="<?php echo $endereco;?>"/>;
+    	<input type="text" name="endereco"value="<?php echo $endereco;?>"/>
         <input type="hidden" name="id" value="<?php echo $id;?>"/>
          <input type="submit" name="alterarDados"/>
     </form>
