@@ -18,47 +18,46 @@
     </div>
     <div>
         <table>
-                
-                <caption>Alunos Cadastrados</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Endereco</th>
-                        <th scope="col">CPF</th>
-                        <th scope="col">Idade</th>
-                        <th scope="col">Telefone</th>
-                        <th scope="col">Apagar</th>
-                    </tr>
-                </thead>
-                <?php
-        
-                include '../../db/DB.php';
-        
-                $obj = new BD();
-                $aluno = $obj->select();
-        
-                while($Aluno = $aluno->fetchObject()){
-                ?>
-                <tbody>
-                    <tr>
-                        <th scope="row"><?php  echo $Aluno->nome?></th>
-                        <td><?php  echo $Aluno->endereco?></td>
-                        <td><?php  echo $Aluno->cpf?></td>
-                        <td><?php  echo $Aluno->idade?></td>
-                        <td><?php  echo $Aluno->telefone?></td>
-                        <td>
-                            <form action="../db/DeletarAluno.php" method="post" class="apagar">
-                                <input type="submit" value="apagar">
-                                <input type="hidden" name="cpf" value="<?php  echo $Aluno->cpf?>">
-                        </form>
-                    </td>
-        
-                    </tr>
-                </tbody>
-                <?php
-                    }
-                ?>
-            </table>    
+            <caption>Alunos Cadastrados</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Endereco</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Apagar</th>
+                </tr>
+            </thead>
+            <?php
+
+            include '../../db/DB.php';
+
+            $obj = new BD();
+            $aluno = $obj->select();
+
+            while($Aluno = $aluno->fetchObject()){
+            ?>
+            <tbody>
+                <tr>
+                    <th scope="row"><?php  echo $Aluno->nome?></th>
+                    <td><?php  echo $Aluno->endereco?></td>
+                    <td><?php  echo $Aluno->cpf?></td>
+                    <td><?php  echo $Aluno->idade?></td>
+                    <td><?php  echo $Aluno->telefone?></td>
+                    <td>
+                        <form action="../db/DeletarAluno.php" method="post" class="apagar">
+                            <input type="submit" value="apagar">
+                            <input type="hidden" name="cpf" value="<?php  echo $Aluno->cpf?>">
+                    </form>
+                </td>
+
+                </tr>
+            </tbody>
+            <?php
+                }
+            ?>
+        </table>    
     </div>
 </table>
 </body>
