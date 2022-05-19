@@ -11,10 +11,10 @@ $cpf = $_POST['cpf'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Alunos</title>
+    <title>Listar Fornecedores</title>
 </head>
 <body>
-    <a href="ListarAlunos.php">Listar Alunos</a>
+    <a href="ListarAlunos.php">Listar Fornecedores</a>
     <?php
     
     require_once("Db.php");
@@ -24,6 +24,6 @@ $cpf = $_POST['cpf'];
 
     $db->delete($cpf);
     ?>
-    <h2>Aluno Deletado Com Sucesso!!!</h2>
+    <h2>Fornecedor Deletado Com Sucesso!!!</h2>
 </body>
 </html>

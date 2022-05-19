@@ -1,9 +1,9 @@
 <?php
-##salvar como CrudAlunos.php
+##salvar como Crudfornecedors.php
 ##arquivo que implementa a tabela e seus atributos, acessa os metodos get e set
 require_once '../../db/DB.php';    //inclui arquivo DB
 
- abstract class CrudProfessor extends DB {   //faz herança do arquivo DB
+ abstract class CrudFornecedors extends DB {   //faz herança do arquivo DB
     
     protected $tabela;
     public $nome;

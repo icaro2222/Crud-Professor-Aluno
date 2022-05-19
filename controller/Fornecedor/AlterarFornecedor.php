@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once 'Alunos.php';
+require_once 'Fornecedor.php';
 
 ?>
 
@@ -12,11 +12,11 @@ require_once 'Alunos.php';
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
-        <title>Alteração de alunos - WEB I</title>
+        <title>Alteração de fornecedor - WEB I</title>
 </head>
 
 <body>
-    <h1>Alterar Aluno</h1>
+    <h1>Alterar fornecedor</h1>
    <?php  
       // Alterar
 
@@ -29,10 +29,10 @@ require_once 'Alunos.php';
        if ( isset($_POST['alterarDados'])):
        {
          echo "entrou no post";
-        $aluno = new Alunos;
-           $aluno->setNome($nome);
-           $aluno->setEndereco($endereco);
-           $aluno->update($id);
+        $fornecedor = new Fornecedors;
+           $fornecedor->setNome($nome);
+           $fornecedor->setEndereco($endereco);
+           $fornecedor->update($id);
         }
      endif;
     ?>
@@ -49,7 +49,7 @@ require_once 'Alunos.php';
     </form>
             <!-- Fim da tabela -->
 
-      <a href=ListarAluno.php><button>Voltar</button></a>
+      <a href=ListarFornecedor.php><button>Voltar</button></a>
 
 </body>
 </html>

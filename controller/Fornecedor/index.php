@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor</title>
+    <title>Fornecedor</title>
 </head>
 <body>
-    <h1>Listar Professores</h1>
-    <a href="ListarProfessor.php">Listar Professores</a>
-    <h1>Cadastrar Aluno</h1>
-    <a href="CadastrarProfessor.php">Cadastrar professor</a>
+        
+    <a href="../../index.php"><button>Voltar</button></a>
+
+    <h1>Listar Fornecedores</h1>
+    <a href="./ListarFornecedor.php">Listar fornecedors</a>
+    <h1>Cadastrar Fornecedor</h1>
+    <a href="./CadastrarFornecedor.php">Cadastrar fornecedor</a>
     
 </body>
 </html>

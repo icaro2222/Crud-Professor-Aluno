@@ -5,8 +5,7 @@
  * herda da classe crudfornecedor
  * contem metodos basicos para criar, deletar, Lê e apagar dados no BD
  */
-
- include_once '../../db/DB.php';
+include_once '../../db/DB.php';
 
 require_once 'CrudFornecedor.php';
 
@@ -50,20 +49,12 @@ require_once 'CrudFornecedor.php';
         return $stm->execute();
     }
     
-    //deleta  1 item
+//deleta  1 item
     public function delete($id) {
         $sql = "DELETE FROM $this->tabela WHERE id = :id";
         $stm = DB::prepare($sql);
         $stm->bindParam(':id', $id, PDO::PARAM_INT);
         return $stm->execute();
     }
-
-    //deleta  1 item
-        public function deleteNome($nome) {
-            $sql = "DELETE FROM $this->tabela WHERE nome = :nome";
-            $stm = DB::prepare($sql);
-            $stm->bindParam(':nome', $nome, PDO::PARAM_INT);
-            return $stm->execute();
-        }
     
 }

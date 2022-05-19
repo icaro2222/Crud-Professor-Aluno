@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once 'Alunos.php';
+require_once 'Fornecedor.php';
 
 ?>
 
@@ -11,26 +11,26 @@ require_once 'Alunos.php';
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 <head>
-        <title>cadastro de alunos - WEB I</title>
+        <title>cadastro de Fornecedor - WEB I</title>
 
 </head>
 
 <body>
-    <h1>Cadastrar Aluno</h1>
+    <h1>Cadastrar fornecedor</h1>
         
-    <a href="../Aluno/index.php"><button>Voltar</button></a>
+    <a href="../Fornecedor/index.php"><button>Voltar</button></a>
 
    <?php    
-      $aluno = new Alunos;
+      $fornecedor = new Fornecedor;
       if(isset($_POST['cadastrar'])):
             $nome = $_POST['nome'];
             $endereco = $_POST['endereco'];
 
-            $aluno->setNome($nome);
-            $aluno->setEndereco($endereco);
+            $fornecedor->setNome($nome);
+            $fornecedor->setEndereco($endereco);
 
-            if($aluno->insert()){
-                echo "Aluno ". $nome. " inserido com sucesso";
+            if($fornecedor->insert()){
+                echo "fornecedor ". $nome. " inserido com sucesso";
             }
       endif;
     ?>

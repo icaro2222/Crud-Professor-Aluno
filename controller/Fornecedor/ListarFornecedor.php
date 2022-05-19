@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once 'Alunos.php';
+require_once 'Fornecedor.php';
 
 ?>
 
@@ -12,12 +12,12 @@ require_once 'Alunos.php';
     <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
 
 <head>
-        <title>Lista de alunos - WEB I</title>
+        <title>Lista de Fornecedor - WEB I</title>
 </head>
 
 <body>
    
-    <h1>Listar Alunos</h1>
+    <h1>Listar Fornecedor</h1>
     
     
     <a href="../Aluno/index.php"><button>Voltar</button></a>
@@ -33,7 +33,7 @@ require_once 'Alunos.php';
                 <tbody>
                     <?php 
                     
-                    $aluno=New Alunos;
+                    $aluno=New fornecedor;
 
                     //exclusao de Usuario
                     if (isset($_POST['excluir'])){

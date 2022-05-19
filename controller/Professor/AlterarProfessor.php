@@ -48,10 +48,5 @@ require_once 'Alunos.php';
     </form>
             <!-- Fim da tabela -->
 
-
-
-
-    </form>
-
 </body>
 </html>
