@@ -12,7 +12,9 @@
     <div>
         <h3>Lista de Alunos</h3>
         <h3>------------------------------------</h3>
-        <a href="../../view/index.html">Voltar</a>
+        <a href="../../index.php">
+            <button>Voltar</button>
+        </a>
     </div>
     <div>
         <table>
