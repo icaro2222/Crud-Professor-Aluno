@@ -13,12 +13,11 @@
 
     <header>Topo</header>
     <main>
-        <h2>Aluno</h2>
-        <a href="controller/Aluno/index.php">Aluno</a>
-        <h2>Professor</h2>
-        <a href="controller/Professor/index.php">Professor</a>
-        <h2>Fornecedor</h2>
-        <a href="controller/Fornecedor/index.php">Fornecedor</a>
+        <div>
+            <a href="controller/Aluno/index.php"><button><h2>Aluno</h2></button></a>
+            <a href="controller/Professor/index.php"><h2>Professor</h2>
+            <a href="controller/Fornecedor/index.php"><h2>Fornecedor</h2></a>
+        </div>
     </main>
     
 	<asideL>Lateral ESQ</asideL>
