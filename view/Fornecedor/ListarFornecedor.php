@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once '../../app/controller/Fornecedor.php';
 
+include_once '../../app/controller/Fornecedor.php'
 ?>
 
 <!DOCTYPE HTML>
@@ -36,7 +36,7 @@ require_once '../../app/controller/Fornecedor.php';
                 <tbody>
                     <?php 
                     
-                    $fornecedor = New fornecedor;
+                    $fornecedor = New Fornecedor;
 
                     //exclusao de Usuario
                     if (isset($_POST['excluir'])){
