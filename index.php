@@ -13,10 +13,15 @@
 
     <header>Topo</header>
     <main>
-        <div>
+        <div class="center">
+        </div>
+        <div class="center">
+            <img src="public/img/escola.png" alt="">
             <a href="./view/Aluno/index.php"><button><h2>Aluno</h2></button></a>
             <a href="./view/Professor/index.php"><button><h2>Professor</h2></button></a>
             <a href="./view/Fornecedor/index.php"><button><h2>Fornecedor</h2></button></a>
+        </div>
+        <div class="center">
         </div>
     </main>
     

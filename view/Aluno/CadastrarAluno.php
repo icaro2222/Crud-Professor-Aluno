@@ -20,9 +20,11 @@ require_once '../../app/controller/Alunos.php';
     
 	<header>Topo</header>
 	<main>
-    <h1>Cadastrar Aluno</h1>
-        
-    <a href="../Aluno/index.php"><button>Voltar</button></a>
+        <div class="center">
+            <a href="../Aluno/index.php"><button>Voltar</button></a>
+        </div>
+        <div class="center">
+            <h1>Cadastrar Aluno</h1>
 
    <?php    
       $aluno = new Alunos;
@@ -48,6 +50,9 @@ require_once '../../app/controller/Alunos.php';
             
     </form>
 
+        </div>
+        <div class="center">
+        </div>
     </main>
     
 	<asideL>Lateral ESQ</asideL>

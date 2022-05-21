@@ -42,3 +42,25 @@ table {
 .apagar input{
     background-color: red;
 }
+
+.center{    
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 30%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+}
+.center img{
+    width: 100%;
+}
+
+.center input{
+    width: 30%;
+}
+
+
+
+

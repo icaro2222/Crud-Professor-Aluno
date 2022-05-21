@@ -13,12 +13,16 @@
 	<header>Topo</header>
 
     <main>
-        <a href="../../index.php"><button>Voltar</button></a>
-
-        <h1>Listar Alunos</h1>
-        <a href="./ListarAluno.php">Listar Alunos</a>
-        <h1>Cadastrar Aluno</h1>
-        <a href="./CadastrarAluno.php">Cadastrar Aluno</a>
+        <div class="center">
+        </div>
+        <div class="center">
+            <img src="../../public/img/escola.png" alt="">
+            <a href="../../index.php"><button>Voltar</button></a>
+            <a href="./ListarAluno.php"><button> Alunos</button></a>
+            <a href="./CadastrarAluno.php"><button>Cadastrar Aluno</button></a>
+        </div>
+        <div class="center">
+        </div>
     </main>
     
 	<asideL>Lateral ESQ</asideL>
