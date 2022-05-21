@@ -8,9 +8,9 @@ require_once 'Professor.php';
 
 <!DOCTYPE HTML>
 <html lang="pt-BR">
-<link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/style-grid.css">
-<link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
+<link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/style-grid.css">
+<link rel="shortcut icon" href="../../public/img/escola.png" type="image/x-icon">
 
 <head>
         <title>Lista de  s - WEB I</title>

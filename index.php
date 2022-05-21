@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style-grid.css">
-    <link rel="shortcut icon" href="img/escola.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/style-grid.css">
+    <link rel="shortcut icon" href="public/img/escola.png" type="image/x-icon">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Home</title>
 </head>
@@ -15,8 +15,8 @@
     <main>
         <div>
             <a href="./view/Aluno/index.php"><button><h2>Aluno</h2></button></a>
-            <a href="controller/Professor/index.php"><h2>Professor</h2>
-            <a href="controller/Fornecedor/index.php"><h2>Fornecedor</h2></a>
+            <a href="./view/Professor/index.php"><button><h2>Professor</h2></button></a>
+            <a href="./view/Fornecedor/index.php"><button><h2>Fornecedor</h2></button></a>
         </div>
     </main>
     

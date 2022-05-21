@@ -2,15 +2,15 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once 'Alunos.php';
+require_once '../../app/controller/Alunos.php';
 
 ?>
 
 <!DOCTYPE HTML>
 <html lang="pt-BR">
-    <link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../../css/style-grid.css">
-    <link rel="shortcut icon" href="../../img/escola.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../public/css/style.css">
+	<link rel="stylesheet" href="../../public/css/style-grid.css">
+    <link rel="shortcut icon" href="../../public/img/escola.png" type="image/x-icon">
 <head>
         <title>cadastro de alunos - WEB I</title>
 

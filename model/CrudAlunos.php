@@ -1,7 +1,7 @@
 <?php
 ##salvar como CrudAlunos.php
 ##arquivo que implementa a tabela e seus atributos, acessa os metodos get e set
-require_once './db/DB.php';    //inclui arquivo DB
+require_once 'db/DB.php';    //inclui arquivo DB
 
  abstract class CrudAlunos extends DB {   //faz herança do arquivo DB
     
