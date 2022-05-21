@@ -5,7 +5,7 @@
  * herda da classe crudAlunos
  * contem metodos basicos para criar, deletar, Lê e apagar dados no BD
  */
-include_once '../../db/DB.php';
+include_once '../../model/db/';
 
 require_once 'CrudAlunos.php';
 
