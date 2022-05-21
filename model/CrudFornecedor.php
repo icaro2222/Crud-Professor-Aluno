@@ -1,7 +1,7 @@
 <?php
 ##salvar como Crudfornecedors.php
 ##arquivo que implementa a tabela e seus atributos, acessa os metodos get e set
-require_once '../../db/DB.php';    //inclui arquivo DB
+require_once 'db/DB.php';    //inclui arquivo DB
 
  abstract class CrudFornecedor extends DB {   //faz herança do arquivo DB
     

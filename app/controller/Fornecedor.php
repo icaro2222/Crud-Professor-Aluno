@@ -5,9 +5,9 @@
  * herda da classe crudfornecedor
  * contem metodos basicos para criar, deletar, Lê e apagar dados no BD
  */
-include_once './db/DB.php';
+include_once '../../model/db/DB.php';
 
-require_once './ CrudFornecedor.php';
+require_once '../../model/CrudFornecedor.php';
 
  class Fornecedor extends CrudFornecedor {
     
